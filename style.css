@@ -1599,22 +1599,33 @@ img{
 
 
 /* ===========================
-   スマホ実機調整：ナビ2段中央揃え
+   ナビゲーション調整
 =========================== */
 
+/* PC */
+.site-nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:42px;
+}
+
+.nav-row{
+    display:flex;
+    align-items:center;
+    gap:42px;
+}
+
+/* スマホ */
 @media (max-width:600px){
 
     .site-nav{
-        display:flex;
         flex-direction:column;
-        align-items:center;
         gap:12px;
     }
 
     .nav-row{
-        display:flex;
         justify-content:center;
-        align-items:center;
         gap:28px;
     }
 
@@ -1624,7 +1635,6 @@ img{
         text-align:center;
     }
 }
-
 
 /* ===========================
    スマホ実機調整：説明文の改行
